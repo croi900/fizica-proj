@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+ 		<script src="index.js"></script> 
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="index.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="filein">
+			<input type="file" id="fileInput">
+			<button onclick="readFile()">Load File</button>
+			<button onclick="runClassifer()">Classify</button>
+
+			<input type="text" id="pointInput">
+			<div id="fileContent"></div>  
+		</div>
+		<div class="float container floatbox">
+			<div class="visualizer">
+				<canvas id="viz" class=vizcanvas" width="640" height="640"></canvas>
+			</div>
+			<div class="tabel">
+
+			<table id="dataTable">
+				<tr>
+				<th>X</th>
+				<th>Y</th>
+				<th>Labels</th>
+				</tr>
+			</table>
+			</div>
+			<div class="exp">
+			<p>The k-Nearest Neighbors algorithm, also known as kNN, is a non-parametric, supervised learning classifier. It uses proximity to make classifications or predictions about the grouping of an individual data point. The algorithm works on the assumption that similar points can be found near one another.</p>
+
+			<p>For classification problems, a class label is assigned on the basis of a majority vote. This means the label that is most frequently represented around a given data point is used. The main distinction here is that classification is used for discrete values.</p>
+
+			<p>Before a classification can be made, the distance must be defined. Euclidean distance is most commonly used. The KNN algorithm is also part of a family of “lazy learning” models, meaning that it only stores a training dataset versus undergoing a training stage. All the computation occurs when a classification or prediction is being made.</p>
+
+			<p>However, as a dataset grows, KNN becomes increasingly inefficient, compromising overall model performance. Despite this, it is still one of the first algorithms one learns in data science due to its simplicity and accuracy. It is commonly used for simple recommendation systems, pattern recognition, data mining, financial market predictions, intrusion detection, and more.</p>
+			</div>
+		</div>
+	</body>
+</html>
